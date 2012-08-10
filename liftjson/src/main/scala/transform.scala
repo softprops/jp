@@ -13,14 +13,14 @@ object Json extends Transform[String, JValue] {
   def apply(in: String, path: List[PathElement]): JValue =
     filter(JsonParser.parse(in), path)
 
-  def filter(value: JValue, path: List[PathElement]): JValue =
+  private def filter(value: JValue, path: List[PathElement]): JValue =
     path match {
       case Nil => value
       case el :: els =>
         filter(filter(value, el), els)
     }
 
-  def filter(value: JValue, el: PathElement): JValue =
+  private def filter(value: JValue, el: PathElement): JValue =
     (el match {
       case NamedProperty(false, name) =>
         (value \ name, value) match {
