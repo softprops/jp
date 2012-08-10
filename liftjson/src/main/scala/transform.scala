@@ -17,7 +17,6 @@ object Json extends Transform[String, JValue] {
     path match {
       case Nil => value
       case el :: els =>
-        println("filter %s then path %s" format (el, els))
         filter(filter(value, el), els)
     }
 
@@ -26,9 +25,6 @@ object Json extends Transform[String, JValue] {
       case NamedProperty(false, name) =>
         (value \ name, value) match {
           case (res, _: JArray) =>
-            println("look info for '%s' in %s => res %s" format(
-              name, value, res
-            ))
             res match {
               case JNothing =>
                 JArray(List())
