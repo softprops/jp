@@ -48,34 +48,34 @@ in this, a case `JValue`.
     <th>JSONPath Operator</th><th>Description</th>
   </tr>
   <tr>
-    <td>`$`</td><td>the root object/element</td>
+    <td>$</td><td>the root object/element</td>
   </tr>
   <tr>
-    <td>`@`</td><td>the current object/element</td>
+    <td>@</td><td>the current object/element</td>
   </tr>
   <tr>
-    <td>`.` or `[]`</td><td>child operator</td>
+    <td>. or []</td><td>child operator</td>
   </tr>
   <tr>
-    <td>`..`</td><td>recursive descent. JSONPath borrows this syntax from E4X</td>
+    <td>..</td><td>recursive descent. JSONPath borrows this syntax from E4X</td>
   </tr>
   <tr>
-    <td>`*`</td><td>wildcard. All objects/elements regardless their names.</td>
+    <td>*</td><td>wildcard. All objects/elements regardless their names.</td>
   </tr>
   <tr>
-    <td>`[]`</td><td>subscript operator.</td>
+    <td>[]</td><td>subscript operator.</td>
   </tr>
   <tr>
-    <td>`[,]`</td><td>Union operator in XPath results in a combination of node sets. JSONPath allows alternate names or array indices as a set.</td>
+    <td>[,]</td><td>Union operator in XPath results in a combination of node sets. JSONPath allows alternate names or array indices as a set.</td>
    </tr>
    <tr>
-    <td>`[start:end:step]`</td><td>array slice operator borrowed from ES4</td>
+    <td>[start:end:step]</td><td>array slice operator borrowed from ES4</td>
     </tr>
    <tr>
-    <td>`?()`</td><td>applies a filter (script) expression</td>    
+    <td>?()</td><td>applies a filter (script) expression</td>    
     </tr>
    <tr>
-    <td>`()`</td><td>script expression, using the underlying script engine</td>
+    <td>()</td><td>script expression, using the underlying script engine</td>
   </tr>  
 </table>
 
