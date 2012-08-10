@@ -49,6 +49,8 @@ in this, a case `JValue`.
   </tr>
   <tr>
     <td>`$`</td><td>the root object/element</td>
+  </tr>
+  <tr>
     <td>`@`</td><td>the current object/element</td>
   </tr>
   <tr>
