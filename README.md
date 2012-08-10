@@ -32,7 +32,7 @@ Below is an example of transforming a json path parse result with lift json.
 import net.liftweb.json.JsonAST
 import net.liftweb.json.Printer
 
-path("""{"store":"book":[]}""")(as.lift.Json).fold(identity, { js =>
+path("""{"store":"book":[{"title":"test"}]}""")(as.lift.Json).fold(identity, { js =>
    Printer.pretty(JsonAST.render(js))
 })
 ```
